@@ -1,0 +1,14 @@
+<ion-list>
+  <ion-item button>
+    <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+    {{ usuario?.nombre }} {{ usuario?.apellido }}
+  </ion-item>
+  <ion-item button (click)="cambiarContrasena()">
+    <ion-icon slot="start" name="key-outline"></ion-icon>
+    Cambiar Contraseña
+  </ion-item>
+  <ion-item button (click)="cerrarSesion()">
+    <ion-icon slot="start" name="log-out-outline"></ion-icon>
+    Cerrar Sesión
+  </ion-item>
+</ion-list>

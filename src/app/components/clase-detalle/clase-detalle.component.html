@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>{{ clase?.nombre }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrarModal()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-img [src]="clase?.imagen" alt="Imagen de la clase"></ion-img>
+  <ion-list>
+    <ion-item>
+      <ion-label><strong>Profesor:</strong> {{ clase?.profesor }}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label><strong>Descripción:</strong> {{ clase?.descripcion }}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label><strong>Sala:</strong> {{ clase?.sala }}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label><strong>Horario:</strong> {{ clase?.horario }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
