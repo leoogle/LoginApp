@@ -27,7 +27,7 @@ export class RegistroPage implements OnInit {
   }
   async registroToast() {
     const toast = await this.toastController.create({
-      message: 'Inicio de sesión exitoso',
+      message: 'Cuenta creada con exito',
       duration: 2000, 
       color: 'success', 
       position: 'bottom'
