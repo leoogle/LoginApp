@@ -1,16 +1,21 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>
-      Bienvenido, {{ usuario?.nombre }} {{ usuario?.apellido }}
-    </ion-title>
+  <ion-toolbar color="primary" class="toolbar-custom">
+    <!-- Logo a la izquierda -->
+    <ion-img src="assets/img/logo.png" class="logo"></ion-img>
+
+    <!-- Botón a la derecha -->
     <ion-buttons slot="end">
-      <!-- Icono del menú -->
-      <ion-img src="assets/img/logo.png" class="logo"></ion-img>
       <ion-button (click)="abrirMenu($event)">
         <ion-icon name="person-circle-outline"></ion-icon>
       </ion-button>
-      
     </ion-buttons>
+  </ion-toolbar>
+
+  <!-- Barra adicional para el nombre en pantallas pequeñas -->
+  <ion-toolbar color="primary" class="toolbar-nombre">
+    <ion-title>
+      Bienvenido, {{ usuario?.nombre }} {{ usuario?.apellido }}
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
